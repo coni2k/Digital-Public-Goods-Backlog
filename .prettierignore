@@ -1,0 +1,7 @@
+package.json
+package-lock.json
+www
+dist
+lib
+.tmp
+**/node_modules

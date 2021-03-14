@@ -1,0 +1,21 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-buttons class="ion-padding" slot="end">
+      <ion-button fill="clear" (click)="reset()">Reset</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" fullscreen>
+  <ion-list>
+    <ion-list-header> Tags </ion-list-header>
+    <ion-item *ngFor="let item of filterOptions.tags">
+      <ion-label (click)="item.enabled = !item.enabled">
+        {{ item.tag.name }}
+      </ion-label>
+      <ion-checkbox [(ngModel)]="item.enabled"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <ion-button class="show-results" expand="block" shape="round" (click)="showResults()"> Show results </ion-button>
+</ion-content>

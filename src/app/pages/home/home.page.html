@@ -1,0 +1,15 @@
+<ion-content fullscreen>
+  <div class="heading-container">
+    <h1 class="ion-margin-start heading">Projects</h1>
+    <ion-buttons class="filter-options-container">
+      <ion-button class="options" fill="clear" (click)="handleFilterOptionsClick()">
+        Filters
+      </ion-button>
+    </ion-buttons>
+  </div>
+  <ng-container *ngIf="projects$ | async as projects">
+    <ng-container *ngFor="let project of projects; trackBy: trackById">
+      <app-generic-feed-card [project]="project" (cardClick)="handleCardClick(project)"></app-generic-feed-card>
+    </ng-container>
+  </ng-container>
+</ion-content>

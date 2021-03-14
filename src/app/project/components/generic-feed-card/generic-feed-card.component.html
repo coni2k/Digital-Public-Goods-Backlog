@@ -1,0 +1,19 @@
+<ion-card *ngIf="project" class="generic-feed-card">
+  <ion-card-content class="content">
+    <div class="title-container">
+      <h3 [innerHTML]="project.title" (click)="handleCardClick()"></h3>
+      <ion-buttons slot="end">
+        <ion-button color="primary" fill="clear" (click)="project.favorite = !project.favorite">
+          <ion-icon [name]="project.favorite ? 'heart' : 'heart-outline'" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </div>
+
+    <section (click)="handleCardClick()" class="summary" [innerHTML]="project.summary"></section>
+
+    <section class="footer">
+      <ion-item-divider class="divider"></ion-item-divider>
+      <app-project-tags class="tags ion-padding-top" [tags]="project.tags"></app-project-tags>
+    </section>
+  </ion-card-content>
+</ion-card>

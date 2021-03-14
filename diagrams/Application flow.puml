@@ -1,0 +1,30 @@
+@startuml
+
+title
+Digital Public Goods Backlog
+Application flow
+end title
+
+actor Developer as Dev
+database "DPG Backlog" as Backlog
+actor "Project owner" as PO
+
+Dev -> Backlog : Search & filter projects
+return : Shows the related results
+Dev -> Backlog : Selects & applies to a project
+return : "Thank you!"
+
+|||
+
+Backlog -> PO : Sends a notification email
+note over PO : "There's a new application! 🎉"
+return : Logs into admin panel
+Backlog -> PO : Shows the active applications
+return : Reviews & approves an application
+
+|||
+
+Backlog -> Dev : Sends a notification email
+note over Dev : "You've been selected! 🚀"
+
+@enduml

@@ -1,0 +1,15 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.ignorePath": ".prettierignore",
+  "prettier.configPath": ".prettierrc",
+  "prettier.requireConfig": true,
+  "prettier.useEditorConfig": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "search.exclude": {
+    "documentation.json": true
+  }
+}

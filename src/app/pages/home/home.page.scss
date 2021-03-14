@@ -1,0 +1,15 @@
+:host {
+  .heading-container {
+    display: flex;
+    justify-content: space-between;
+
+    .filter-options-container {
+      margin-right: 8px;
+      margin-top: 24px;
+    }
+  }
+
+  .heading {
+    margin-top: 32px;
+  }
+}

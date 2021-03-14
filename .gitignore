@@ -1,0 +1,40 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/www
+
+# dependencies
+/node_modules
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.ionic
+/.sass-cache
+/.sourcemaps
+/.versions
+npm-debug.log
+yarn-error.log
+testem.log
+
+# logs
+*.log
+log.txt
+npm-debug.log*
+
+# System Files
+*~
+*.sw[mnpcod]
+.tmp
+*.tmp
+*.tmp.*
+.DS_Store
+Thumbs.db
+UserInterfaceState.xcuserstate
+$RECYCLE.BIN/

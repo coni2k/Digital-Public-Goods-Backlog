@@ -1,0 +1,60 @@
+{
+  "name": "api/v1/Projects/GET-GetAll",
+  "responses": {
+    "default": {
+      "status": 200,
+      "default": true,
+      "data": [
+        {
+          "title": "OpenCRVS",
+          "projectId": 1,
+          "content": "<h3>Project updates</h3><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi quas dolorem atque ratione fugit a, consectetur minima rem quo ipsam odio molestiae? Blanditiis, assumenda. Obcaecati, sint vel sapiente maiores nisi reiciendis, dicta ad, vitae commodi ex totam cupiditate saepe quisquam magni atque debitis deleniti iste! Sequi error quidem aut dicta reiciendis tempore nihil modi! Voluptatibus esse, iste facere quas itaque corrupti placeat quos perspiciatis corporis sequi, excepturi inventore, delectus dolorum. Molestiae qui animi nam maxime fuga, veniam magnam recusandae tempore expedita architecto tenetur ab. Libero quisquam ipsa vel tenetur, tempora consequatur molestiae beatae, obcaecati magni amet quasi! Iure quia accusantium iste sed dolores? Sapiente veritatis sed minima consequatur ratione consectetur et, eum nulla aliquid sint eaque vel vitae quibusdam animi dicta nam illo, amet dolores, voluptas libero? Aut autem iure, expedita ipsam consectetur iste aliquid error veniam optio alias illum blanditiis dolore ad qui impedit repellat odit explicabo accusamus unde. Saepe tenetur sint facilis magnam voluptatem est porro ipsa dignissimos. Ut tempore repellendus doloribus sint velit pariatur ipsum voluptatibus consequatur tenetur, dolor, aliquam veritatis suscipit? Dolorum itaque ex tenetur ut fugiat aliquam hic harum aut consequuntur placeat. Provident, voluptate tempore? Obcaecati nisi, velit corrupti numquam sapiente odio exercitationem ipsam veritatis delectus corporis dolor, reprehenderit ad sunt fugiat quod deleniti molestiae ex. Nesciunt quae molestias consectetur provident, deserunt eveniet eius tenetur commodi maiores impedit. Commodi facere, sit modi quasi voluptatibus ipsum dicta inventore cum eligendi pariatur quas exercitationem temporibus quisquam libero veritatis quo assumenda. Consectetur ab voluptatum facilis nesciunt alias sapiente perferendis hic, dolor, repudiandae cum, libero illo temporibus aliquam quia ad. Distinctio, iure quam harum repudiandae eum tenetur eligendi rem aperiam ab sapiente alias. Nulla nostrum ratione incidunt iusto rem, quas autem asperiores ea voluptatem consequuntur, reiciendis non deserunt eius provident in, similique tenetur atque aperiam? Vel maiores magni nemo.</p>",
+          "summary": "<p>Plan International and partners are building an open-source digital CRVS system that works in every country and for every individual.</p>",
+          "tags": [{ "name": "Humanitarian" }],
+          "favorite": false
+        },
+        {
+          "title": "StoryWeaver",
+          "projectId": 2,
+          "content": null,
+          "summary": "<p>StoryWeaver is an open source platform by Pratham Books for multilingual children’s stories.</p>",
+          "tags": [{ "name": "Education" }, { "name": "Children" }],
+          "favorite": false
+        },
+        {
+          "title": "Curious Learning",
+          "projectId": 3,
+          "content": null,
+          "summary": "<p>Curious Learning works with partners to curate & localize and distribute & measure free open source apps that empowers everyone to have the opportunity to learn to read.</p>",
+          "tags": [{ "name": "Education" }, { "name": "Children" }],
+          "favorite": false
+        },
+        {
+          "title": "Primero",
+          "projectId": 4,
+          "content": null,
+          "summary": "<p>Primero™ is an open source software platform that helps social services, humanitarian and development workers manage protection-related data, with tools that facilitate case management, incident monitoring and family tracing and reunification.</p>",
+          "tags": [{ "name": "Children" }, { "name": "Gender Equality" }, { "name": "Humanitarian" }],
+          "favorite": false
+        }
+      ]
+    },
+    "empty": {
+      "status": 200,
+      "data": []
+    },
+    "bad-request": {
+      "status": 400
+    },
+    "unauthorized": {
+      "status": 401
+    },
+    "not-found": {
+      "status": 404
+    }
+  },
+  "request": {
+    "url": "v1/Projects/GetAll",
+    "method": "GET"
+  }
+}
